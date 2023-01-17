@@ -1,0 +1,54 @@
+<div class="card">
+  <div class="card-body">
+    <h4><i class="fa fa-envelope-o" aria-hidden="true" style="color: red;"></i> Personal Information</h4>
+    <form [formGroup]="form" (ngSubmit)="submitAction()">
+      <div class="form-group">
+        <label class="required">Name</label>
+        <input type="text" class="form-control" formControlName="name" aria-describedby="emailHelp" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label class="required">Country</label>
+        <select class="form-control" formControlName="country">
+          <option>1</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="required">City</label>
+        <select class="form-control" formControlName="city">
+          <option>1</option>
+        </select>
+      </div>
+      <label class="required">Language Skills</label>
+      <div class="form-group">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" formControlName="languages" type="checkbox" value="option1">
+          <label class="form-check-label">C++</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" formControlName="languages" type="checkbox" value="option2">
+          <label class="form-check-label">C#</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" formControlName="languages" type="checkbox" value="option2">
+          <label class="form-check-label">Java</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" formControlName="languages" type="checkbox" value="option2">
+          <label class="form-check-label">SQL</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="required">Date</label>
+        <input type="date" formControlName="dateofbirth" class="form-control" aria-describedby="emailHelp">
+      </div>
+      <br>
+      <div class="form-group">
+        <input type="file" (change)="onChange($event)" class="file-input required" accept="application/pdf, application/msword" >
+      </div>
+
+      <div style="text-align: right;">
+        <button (click)="submitAction()" type="submit" class="btn btn-danger" [disabled]="form.invalid">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

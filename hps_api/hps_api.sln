@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hps_api", "hps_api\hps_api.csproj", "{35EFF2CC-0D11-413B-9BE8-7F6770A79F91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35EFF2CC-0D11-413B-9BE8-7F6770A79F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EFF2CC-0D11-413B-9BE8-7F6770A79F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EFF2CC-0D11-413B-9BE8-7F6770A79F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EFF2CC-0D11-413B-9BE8-7F6770A79F91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB72C7CE-C36E-460A-907D-902FEFAEF0EC}
+	EndGlobalSection
+EndGlobal
